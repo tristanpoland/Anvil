@@ -15,32 +15,32 @@ name = "anvil"
 path = "src/main.rs"
 
 [dependencies]
-tokio = { version = "1.0", features = ["full"] }
-clap = { version = "4.0", features = ["derive"] }
-serde = { version = "1.0", features = ["derive"] }
-serde_json = "1.0"
-anyhow = "1.0"
-thiserror = "1.0"
-reedline = "0.28"
-nu-ansi-term = "0.49"
-crossterm = "0.27"
-dirs = "5.0"
-log = "0.4"
-env_logger = "0.10"
-regex = "1.10"
-syn = { version = "2.0", features = ["full", "parsing", "printing", "extra-traits"] }
-quote = "1.0"
-proc-macro2 = "1.0"
-tempfile = "3.8"
-which = "4.4"
-shellexpand = "3.1"
+tokio = { version = "1.45.1", features = ["full"] }
+clap = { version = "4.5.39", features = ["derive"] }
+serde = { version = "1.0.219", features = ["derive"] }
+serde_json = "1.0.140"
+anyhow = "1.0.98"
+thiserror = "2.0.12"
+reedline = "0.40.0"
+nu-ansi-term = "0.50.1"
+crossterm = "0.29.0"
+dirs = "6.0.0"
+log = "0.4.27"
+env_logger = "0.11.8"
+regex = "1.11.1"
+syn = { version = "2.0.101", features = ["full", "parsing", "printing", "extra-traits"] }
+quote = "1.0.40"
+proc-macro2 = "1.0.95"
+tempfile = "3.20.0"
+which = "7.0.3"
+shellexpand = "3.1.1"
 rusty_v8 = { version = "0.32.1", optional = true }
-toml = "0.5"
+toml = "0.8.22"
 
 [dev-dependencies]
-criterion = "0.5"
-proptest = "1.0"
-tempdir = "0.3"
+criterion = "0.6.0"
+proptest = "1.6.0"
+tempdir = "0.3.7"
 
 [features]
 default = ["repl"]
